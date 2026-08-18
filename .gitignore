@@ -32,6 +32,10 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+# .env.production is committed intentionally: it only holds the
+# NEXT_PUBLIC_ Supabase URL and publishable anon key, which are safe
+# to expose client-side (access is enforced by Supabase RLS policies).
+!.env.production
 
 # vercel
 .vercel

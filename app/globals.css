@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+:root {
+  /* Colors */
+  --color-paper-white: #fafafa;
+  --color-pure-white: #ffffff;
+  --color-hairline: #ebebeb;
+  --color-ash: #c9c9c9;
+  --color-smoke: #a8a8a8;
+  --color-graphite: #8f8f8f;
+  --color-slate: #7d7d7d;
+  --color-stone: #666666;
+  --color-charcoal: #4d4d4d;
+  --color-obsidian: #171717;
+  --color-carbon: #000000;
+  --color-terminal-green: #297a3a;
+
+  --background: var(--color-paper-white);
+  --foreground: var(--color-obsidian);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-paper-white: var(--color-paper-white);
+  --color-pure-white: var(--color-pure-white);
+  --color-hairline: var(--color-hairline);
+  --color-ash: var(--color-ash);
+  --color-smoke: var(--color-smoke);
+  --color-graphite: var(--color-graphite);
+  --color-slate: var(--color-slate);
+  --color-stone: var(--color-stone);
+  --color-charcoal: var(--color-charcoal);
+  --color-obsidian: var(--color-obsidian);
+  --color-carbon: var(--color-carbon);
+  --color-terminal-green: var(--color-terminal-green);
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  --radius-nav: 2px;
+  --radius-cards: 6px;
+  --radius-pills: 9999px;
+  --radius-buttons: 6px;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+.card-border {
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.08),
+    0 0 0 2px var(--color-paper-white);
+}
+
+.ghost-border {
+  box-shadow: 0 0 0 1px var(--color-hairline);
+}
+
+.eyebrow {
+  font-family: var(--font-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-size: 11px;
+  line-height: 1.5;
+  letter-spacing: 0.071em;
+  text-transform: uppercase;
+}
